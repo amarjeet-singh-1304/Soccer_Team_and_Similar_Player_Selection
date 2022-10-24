@@ -1,0 +1,15 @@
+Quantitative stats of features: 
+         age  height_cm  pace
+min     16.0      154.0  21.0
+max     54.0      208.0  97.0
+median  25.0      181.0  67.0
+
+Qualitative features (Club Jersey No stats):
+No of Categories: 99
+Most Frequent Club Jersey Number:8.0
+Least Frequent Club Jersey Number:65.0
+
+Qualitative features (Country):
+No of Categories: 183
+Most Frequent Country (Means having the most players from that country in our dataset): England
+Least Frequent Country(Means having the least players from that country in our dataset): Brunei Darussalam

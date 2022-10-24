@@ -1,0 +1,5 @@
+Correlation Matrix: 
+           height_cm       age pace
+height_cm   1.000000               
+age         0.086133       1.0     
+pace       -0.511246 -0.166854  1.0
