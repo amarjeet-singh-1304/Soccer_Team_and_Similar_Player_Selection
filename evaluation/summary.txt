@@ -1,0 +1,15 @@
+Simple Linear Regression metrics results:
+Mean Average Percentage Error: 0.023162394375224906
+Root Mean Square Error:, 1.9057325436079653
+
+Grid Search CV with Linear Regression metrics results:
+Mean Average Percentage Error: 0.02316239437522491
+Root Mean Square Error:, 1.9057325436079653
+
+Ridge Regression metrics results:
+Mean Average Percentage Error: 0.023162394490131525
+Root Mean Square Error:, 1.9057325466775816
+
+Lasso Regression metrics results:
+Mean Average Percentage Error: 0.027388506319243958
+Root Mean Square Error:, 2.2459581441768646

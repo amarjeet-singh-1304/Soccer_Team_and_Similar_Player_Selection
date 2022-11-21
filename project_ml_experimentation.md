@@ -36,29 +36,51 @@ i.e. 55 and there is still marginal error than the actual rating i.e. 58
 ## Interesting Features
 ### Feature A
 **Feature:** 
-Pace
+Movement Reaction
 
 **Justification:** 
-The Pace is an important attribute for each type of athlete whether it be a soccer player or any 
-other field games. 
+The Movement reaction is an important feature with respect to any field game not only for soccer.
+The rating of this attribute is given based on the reaction time of any player after any situation,
+means how much quickly a soccer player behaves after loosing a ball or for a goalkeeper, how he
+reacts after an outfield players hits a shot. So according to domain knowledge, it is an important
+attribute for any player
 
 ### Feature B
-**Feature:** TODO
+**Feature:** 
+Passing
 
-**Justification:** TODO
+**Justification:** 
+As, we all know that soccer is a team game and every team tries to score opposition goal by passing
+the ball to their team player.As per domain knowledge passing is another  most important attribute 
+which can impact the player's overall rating. Here the value of passing is calculated based on number
+of passes completed divided by total number of passes a player attempted * 100. 
 
 ## Experiments 
 ### Varying A
-**Prediction Trend Seen:** TODO
+**Prediction Trend Seen:** 
+As, it has been mentioned above that it is an important attribute for any player so this attribute
+shows a direct relationship with the overall rating, means that increase in this attribute rating
+increases the overall rating and on other side, a decrease in this attribute rating decreases the 
+overall rating.
 
 ### Varying B
-**Prediction Trend Seen:** TODO
+**Prediction Trend Seen:**
+This attribute (passing) also shows direct relationship with the overall rating. Means increase in
+value of passing increases the overall rating and a decrease will decrease the overall rating.
+Therefore, the model on given dataset shows expected behaviour. 
 
 ### Varying A and B together
-**Prediction Trend Seen:** TODO
+**Prediction Trend Seen:** 
+Based on above two trends, it can be said together increasing the both attributes will increase 
+the overall rating and decreasing both will decrease the overall value. Also, the experimentation
+showed this behavior. Also, the slope of trend graph is more than that of above two trends.
 
 
 ### Varying A and B inversely
-**Prediction Trend Seen:** TODO
-
-(duplicate above as many times as needed; remove this line when done)
+**Prediction Trend Seen:** 
+Here, 2 cases are checked. In the first case, while increasing the passing value and decreasing the 
+movement_reaction (by almost same percentage).It was found that the overall value of rating is increased
+slightly (not as it was increased while increasing the passing value only). In the other case,
+when passing value was increased and movement_reaction was decreased, the overall rating was
+decreased slightly.This shows that change in movement reaction is impacting the overall rating
+more than that of passing value.

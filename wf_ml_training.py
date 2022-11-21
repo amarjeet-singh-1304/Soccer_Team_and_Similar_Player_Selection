@@ -15,10 +15,13 @@ def create_model(x_train, y_train):
     pickle.dump(linear_reg_model, open(model_folder + filename, 'wb'))
 
 
-if __name__ == '__main__':
+def main():
     processed_folder_path = 'data_processed/'
     x_train = pd.read_csv(processed_folder_path + "x_train.csv")
     y_train = pd.read_csv(processed_folder_path + "y_train.csv")
-    x_test = pd.read_csv(processed_folder_path + "x_test.csv")
-
     create_model(x_train, y_train)
+
+
+if __name__ == '__main__':
+    main()
+
