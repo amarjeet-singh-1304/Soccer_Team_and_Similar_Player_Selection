@@ -11,7 +11,7 @@ def create_model(x_train, y_train):
     linear_reg_model = LinearRegression()
     x_train = x_train.iloc[:, 1:]
     linear_reg_model.fit(x_train, y_train['overall'])
-    filename = 'finalized_model.sav'
+    filename = 'linear_regression_model.sav'
     pickle.dump(linear_reg_model, open(model_folder + filename, 'wb'))
 
 

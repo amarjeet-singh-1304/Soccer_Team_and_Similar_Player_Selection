@@ -25,7 +25,7 @@ feature_cols = ['potential', 'pace', 'shooting', 'passing', 'dribbling', 'defend
 
 def experimentation():
     model_folder = "models/"
-    model_file_name = "finalized_model.sav"
+    model_file_name = "linear_regression_model.sav"
     reg_model = pickle.load(open(model_folder + model_file_name, 'rb'))
     processed_folder_path = 'data_processed/'
     x_sample = pd.read_csv(processed_folder_path + "sample.csv")
