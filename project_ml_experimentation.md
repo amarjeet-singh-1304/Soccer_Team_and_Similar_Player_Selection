@@ -20,7 +20,7 @@ The ratings has been processed on the basis of club position(playing position me
 and skills that are taken to build the model. The model has predicted has overall value 91. Here the
 players has position has playing position of Centre Forward and attributes like attacking_shooting,
 pace and shooting has higher values so the overall value is also high. So the model is predicting 
-rightly based on the other attributes value.
+rightly based on the other attributes value(looks perfect as per the domain knowledge also).
 
 ### Record 2
 **Raw Data:** 
@@ -29,9 +29,9 @@ sofifa_id,player_url,short_name,long_name,player_positions,overall,potential,val
 
 Prediction Explanation:** 
 As the above-mentioned record is of defensive player(i.e. Centre Back) and attributes like defending, physic,
-skill_long_passing, passing, defending_standing_tackle, defending_sliding_tackle impact the overall rating.
-So the above record is having less rating for these attributes so the model predicted the lower overall rating 
-i.e. 55 and there is still marginal error than the actual rating i.e. 58
+skill_long_passing, passing, defending_standing_tackle, defending_sliding_tackle impact the overall rating more than
+other attributes like shooting etc. So the above record is having less rating for these attributes so the model
+predicted the lower overall rating i.e. 55 and there is still marginal error than the actual rating i.e. 58
 
 ## Interesting Features
 ### Feature A
@@ -43,7 +43,7 @@ The Movement reaction is an important feature with respect to any field game not
 The rating of this attribute is given based on the reaction time of any player after any situation,
 means how much quickly a soccer player behaves after loosing a ball or for a goalkeeper, how he
 reacts after an outfield players hits a shot. So according to domain knowledge, it is an important
-attribute for any player
+attribute for any player. This attribute should have direct relationship with the overall value/rating.
 
 ### Feature B
 **Feature:** 
@@ -81,6 +81,6 @@ showed this behavior. Also, the slope of trend graph is more than that of above 
 Here, 2 cases are checked. In the first case, while increasing the passing value and decreasing the 
 movement_reaction (by almost same percentage).It was found that the overall value of rating is increased
 slightly (not as it was increased while increasing the passing value only). In the other case,
-when passing value was increased and movement_reaction was decreased, the overall rating was
-decreased slightly.This shows that change in movement reaction is impacting the overall rating
+when passing value was increased and movement_reaction was decreased(almost same percentage), the overall 
+rating was decreased slightly.This shows that change in movement reaction is impacting the overall rating
 more than that of passing value.

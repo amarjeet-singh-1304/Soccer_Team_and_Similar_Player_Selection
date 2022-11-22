@@ -10,7 +10,8 @@ Mean Absolute Percentage Error
 The main reason for choosing the Mean Absolute Percentage Error is that as percentage
 error is calculated in terms of absolute error so this avoids the problem of cancelling
 out the positive and negative values. Also, this method is being referred as scale
-independent because it allows the comparison for forecast of different scale.
+independent because it allows the comparison for forecast of different scale. Lower value 
+of MAPE, better the model will forecast the values.
 
 ### Metric 2
 Root Mean Squared Error
@@ -29,7 +30,8 @@ commonly used measures for evaluating the quality of predictions.
 **Construction:** 
 Grid Search CV is process of performing hyperparameter tuning to find the optimal
 values for given model. Here , I applied GridSearch CV to the linear regression 
-model. Also, I applied cross validation 5 times to each of  selected hyperparameter.
+model(same as that of our main model). Also, I applied cross validation 5 times to each 
+of  selected hyperparameter.
 **Evaluation:** 
 In our given dataset as value of Mean Average Percentage error and Root mean square error 
 is same as of classic Linear Regression model. So tuning the parameters is not helping in 
@@ -52,11 +54,11 @@ that I think has less impact) but it further decreased the accuracy.
 
 3. Lasso Regression Model 
 **Construction:** 
-As we all know that Lasso is the modification of the linear regression. Here absolute
-values of the coefficient can be reduced and many will tend to zero in this process. 
+As we all know that Lasso is the modification of the linear regression and ridge regression.
+Here absolute values of the coefficient can be reduced and many will tend to zero in this process. 
 In our previous linear regression model we found the coefficient of each attribute
 used in training. Here in this it selects the coefficients with higher values and 
-eliminates those not having strong relationship(making those attributes coefficients zero).
+eliminates those not having strong relationship( by making those attributes coefficients zero).
 **Evaluation**
 In the given dataset, it has been found that using this method increased the Mean
 Average Percentage error and Root mean square error with respect to linear regression.
@@ -65,4 +67,5 @@ This also tells us that making the model simpler is impacting the accuracy thus
 we cannot eliminate the variables/attributes not showing strong relationship.
 
 ## Best Model
-Linear Regression Model and Grid Search CV Linear Regression Model(Almost showing same accuracy)
+Linear Regression Model and Grid Search CV Linear Regression Model
+(Both showing almost same accuracy)
